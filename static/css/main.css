@@ -4,10 +4,7 @@ body {
   font-size: 1.2em;
 }
 body .navbar {
-  background-color: #000000;
-}
-body .navbar-brand {
-  color: white;
+  background-color: black;
 }
 body .form-group {
   margin-top: 20px;
@@ -39,7 +36,7 @@ body footer {
 body footer .text {
   padding-left: 120px;
   padding-top: 20px;
-  color: white;
+  color: #ccc;
 }
 
 @keyframes type {
