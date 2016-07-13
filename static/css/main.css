@@ -1,7 +1,10 @@
 body {
+  background-image: url("images/backdrop.jpg");
   font: 100% Helvetica, sans-serif;
-  font-size: 1.2em;
+  background-repeat: no-repeat;
+  background-position: center;
   background-color: #efefef;
+  font-size: 1.2em;
 }
 body .navbar {
   background-color: #000000;
@@ -13,24 +16,33 @@ body .form-group {
   margin-top: 20px;
 }
 body p {
-  color: #111;
-  font-family: "arial";
-  font-size: 16px;
+  animation: type 4s steps(60, end);
   margin: 10px 0 0 10px;
+  font-family: "arial";
   white-space: nowrap;
   overflow: hidden;
+  font-size: 16px;
+  color: #111;
   width: 30em;
-  animation: type 4s steps(60, end);
 }
 body p:nth-child(2) {
   animation: type2 8s steps(60, end);
 }
 body p a {
-  color: red;
   text-decoration: none;
+  color: red;
 }
 body span {
   animation: blink 1s infinite;
+}
+body footer {
+  background-color: #000;
+  height: 50px;
+}
+body footer .text {
+  padding-left: 120px;
+  padding-top: 20px;
+  color: white;
 }
 
 @keyframes type {

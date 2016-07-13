@@ -1,13 +1,16 @@
 body{
-
+    background-image: url("images/backdrop.jpg");
     font: 100% Helvetica, sans-serif;
-    font-size: 1.2em;
+    background-repeat: no-repeat;
+    background-position: center;
     background-color: #efefef;
+    font-size: 1.2em;
 
     // NavBar styles
     .navbar{
       background-color: #000000;
     }
+
     .navbar-brand {
       color: white;
     }
@@ -19,27 +22,39 @@ body{
 
     // Typewriter text css follows below
     p{
-        color: #111;
-        font-family: "arial";
-        font-size: 16px;
+        animation: type 4s steps(60, end);
         margin: 10px 0 0 10px;
+        font-family: "arial";
         white-space: nowrap;
         overflow: hidden;
+        font-size: 16px;
+        color: #111;
         width: 30em;
-        animation: type 4s steps(60, end);
+
 
         &:nth-child(2){
             animation: type2 8s steps(60, end);
         }
 
          a{
-            color: red;
             text-decoration: none;
+            color: red;
+
         }
     }
 
     span{
         animation: blink 1s infinite;
+    }
+
+    footer{
+      background-color: #000;
+      height: 50px;
+      .text{
+          padding-left: 120px;
+          padding-top: 20px;
+          color: white;
+      }
     }
 }
 
