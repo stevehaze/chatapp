@@ -1,37 +1,46 @@
-body {
-  font: 100% Helvetica, sans-serif;
-  font-size: 1.2em;
-  background-color: #efefef;
-}
+body{
 
-.blocker{
-  width : 50%;
-  float: left;
-}
+    font: 100% Helvetica, sans-serif;
+    font-size: 1.2em;
+    background-color: #efefef;
 
-// Typewriter text css follows below
-p{
-  color: #111111;
-  font-family: "verdana";
-  font-size: 16px;
-  margin: 10px 0 0 10px;
-  white-space: nowrap;
-  overflow: hidden;
-  width: 30em;
-  animation: type 4s steps(60, end);
-}
+    // NavBar styles
+    .navbar{
+      background-color: #000000;
+    }
+    .navbar-brand {
+      color: white;
+    }
 
-p:nth-child(2){
-  animation: type2 8s steps(60, end);
-}
+    // form styles
+    .form-group{
+      margin-top: 20px;
+    }
 
-p a{
-  color: lime;
-  text-decoration: none;
-}
+    // Typewriter text css follows below
+    p{
+        color: #111;
+        font-family: "arial";
+        font-size: 16px;
+        margin: 10px 0 0 10px;
+        white-space: nowrap;
+        overflow: hidden;
+        width: 30em;
+        animation: type 4s steps(60, end);
 
-span{
-  animation: blink 1s infinite;
+        &:nth-child(2){
+            animation: type2 8s steps(60, end);
+        }
+
+         a{
+            color: red;
+            text-decoration: none;
+        }
+    }
+
+    span{
+        animation: blink 1s infinite;
+    }
 }
 
 @keyframes type{

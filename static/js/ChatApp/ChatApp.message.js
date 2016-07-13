@@ -26,6 +26,13 @@
 
           var self = this;
 
+          $("#comment").keyup(function(event){
+              if(event.keyCode == 13){
+                var content = $("#comment").val();
+                self.sendMessage(content);
+              }
+          })
+
 
           $("#submit").click(function(){
               var content = $("#comment").val();

@@ -3,14 +3,18 @@ body {
   font-size: 1.2em;
   background-color: #efefef;
 }
-
-.blocker {
-  float: left;
+body .navbar {
+  background-color: #000000;
 }
-
-p {
-  color: #111111;
-  font-family: "verdana";
+body .navbar-brand {
+  color: white;
+}
+body .form-group {
+  margin-top: 20px;
+}
+body p {
+  color: #111;
+  font-family: "arial";
   font-size: 16px;
   margin: 10px 0 0 10px;
   white-space: nowrap;
@@ -18,17 +22,14 @@ p {
   width: 30em;
   animation: type 4s steps(60, end);
 }
-
-p:nth-child(2) {
+body p:nth-child(2) {
   animation: type2 8s steps(60, end);
 }
-
-p a {
-  color: lime;
+body p a {
+  color: red;
   text-decoration: none;
 }
-
-span {
+body span {
   animation: blink 1s infinite;
 }
 
