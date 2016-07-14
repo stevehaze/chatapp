@@ -39,7 +39,7 @@
                 <div class="messages">
                   <p></p>
                   {% for message in messages %}
-                    {{ message.author.email }} &nbsp;>&nbsp;<i>{{ message.content }}</1>
+                    {{ message.author.email }} > {{ message.content }}
                     <br />
                   {% endfor %}
                 </div>
