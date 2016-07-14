@@ -33,23 +33,28 @@
             </div>
         </div>
     </nav>
-      <div class="container">
-          <div class="row">
-              <div class="col-md-12">
-                  <div class="messages"></div>
-                  <div class="form-group">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-7">
+                <div class="messages">
+                  <p></p>
+                  {% for message in messages %}
+                    {{ message.author.email }} &nbsp;>&nbsp;<i>{{ message.content }}</1>
+                    <br />
+                  {% endfor %}
+                </div>
+              </div>
+              <div class="col-md-5 input">
+                <div class="form-group">
                     <label for="comment">Comment:</label>
                     <textarea class="form-control" rows="5" id="comment" autofocus></textarea>
                     <button id="submit">Submit</submit>
-                  </div>
-              </div>
-          </div>
-      </div>
+                </div>
+            </div>
+        </div>
+    </div>
   </body>
   <footer>
-    <div class="text">
-Thank you for using ChatApp ~ A GAE Python driven Application.
-</div>
     <input type="hidden" id="token" value="{{token}}" />
   </footer>
 </html>

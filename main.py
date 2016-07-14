@@ -28,13 +28,12 @@ class MainPage(webapp2.RequestHandler):
         template = JINJA_ENVIRONMENT.get_template('/views/index.html')
 
         message_query = Message.query()
-        messages = message_query.order(Message.date, -Message.date).fetch()
-
+        messages = message_query.order(-Message.date,  Message.date).fetch(25)
         token = channel.create_channel("Steve_1")
-
         template_values = {
-            "messages" : messages,
-            "token" : token
+            'user' : users.get_current_user(),
+            'token' : token,
+            'messages' : messages
         }
 
         self.response.write(template.render(template_values))

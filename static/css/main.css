@@ -4,7 +4,18 @@ body {
   font-size: 1.2em;
 }
 body .navbar {
-  background-color: black;
+  background-color: #ccc;
+}
+body .messages {
+  border: 1px solid black;
+  background-color: white;
+  overflow-y: scroll;
+  max-height: 82vh;
+  min-height: 52vh;
+  margin: 20px;
+}
+body .input {
+  color: #333;
 }
 body .form-group {
   margin-top: 20px;
@@ -12,11 +23,13 @@ body .form-group {
 body p {
   animation: type 4s steps(60, end);
   margin: 10px 0 0 10px;
-  font-family: "arial";
+  font-family: "verdana";
   white-space: nowrap;
+  font-style: italic;
+  font-weight: bold;
   overflow: hidden;
-  font-size: 16px;
-  color: #111;
+  font-size: 14px;
+  color: black;
   width: 30em;
 }
 body p:nth-child(2) {
@@ -30,7 +43,7 @@ body span {
   animation: blink 1s infinite;
 }
 body footer {
-  background-color: #000;
+  background-color: #ccc;
   height: 50px;
 }
 body footer .text {

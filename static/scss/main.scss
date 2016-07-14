@@ -5,7 +5,21 @@ body{
 
     // NavBar styles
     .navbar{
-      background-color: black;
+      background-color: #ccc;
+    }
+
+    // Messages styles
+    .messages{
+      border: 1px solid black;
+      background-color: white;
+      overflow-y: scroll;
+      max-height: 82vh;
+      min-height: 52vh;
+      margin: 20px;
+    }
+
+    .input{
+      color: #333;
     }
 
     // form styles
@@ -13,15 +27,17 @@ body{
       margin-top: 20px;
     }
 
-    // Typewriter text css follows below
+    // Typewriter text css follows below.
     p{
         animation: type 4s steps(60, end);
         margin: 10px 0 0 10px;
-        font-family: "arial";
+        font-family: "verdana";
         white-space: nowrap;
+        font-style: italic;
+        font-weight: bold;
         overflow: hidden;
-        font-size: 16px;
-        color: #111;
+        font-size: 14px;
+        color: black;
         width: 30em;
 
 
@@ -41,7 +57,7 @@ body{
     }
 
     footer{
-      background-color: #000;
+      background-color: #ccc;
       height: 50px;
       .text{
           padding-left: 120px;
